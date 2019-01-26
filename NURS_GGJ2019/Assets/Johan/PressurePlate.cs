@@ -16,6 +16,7 @@ public class PressurePlate : MonoBehaviour
         if (collision.CompareTag("Interactor"))
         {
             ActivationState = true;
+            OnActivate.Invoke();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -23,6 +24,7 @@ public class PressurePlate : MonoBehaviour
         if (collision.CompareTag("Interactor"))
         {
             ActivationState = false;
+            OnDeactivate.Invoke();
         }
     }
 }
