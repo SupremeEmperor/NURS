@@ -9,7 +9,7 @@ public class PressurePlate : MonoBehaviour
     public UnityEvent OnDeactivate;
 
     //use this for animation
-    private bool ActivationState;
+    public bool ActivationState;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
