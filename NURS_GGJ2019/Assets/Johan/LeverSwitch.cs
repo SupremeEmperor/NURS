@@ -12,20 +12,7 @@ public class LeverSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (ActivationState)
-            {
-                ActivationState = false;
-                OnDeactivate.Invoke();
-                Debug.Log("Deactivated");
-            }
-            else
-            {
-                ActivationState = true;
-                OnActivate.Invoke();
-                Debug.Log("Activated");
-            }
-        }           
+               
     }
+    
 }
