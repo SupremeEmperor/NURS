@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightProjector : MonoBehaviour
 {
-    int layerMask = 1 << 9;
+    int layerMask = 1;
     public GameObject projection;
     public GameObject litUp;
     float dist = 100f;
@@ -31,7 +31,6 @@ public class LightProjector : MonoBehaviour
         {
             hit = hits[0];
         }
-
         if(hit.collider != null)
         {
             projection.transform.localScale = new Vector3(hit.distance, projection.transform.localScale.y, 1f);
