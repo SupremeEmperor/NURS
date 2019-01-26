@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public void Start()
+    {
+        Time.timeScale = 0f;
+    }
     public void PlayGame()
     {
-        SceneManager.LoadScene("LukeTest");
+        Time.timeScale = 1f;
     }
 
     public void QuitGame()
