@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 10957b85712bf5840a82853457c44707
 TextureImporter:
   fileIDToRecycleName:
@@ -7,6 +8,11 @@ TextureImporter:
     21300004: DogBoy1sprite_2
     21300006: DogBoy1sprite_3
     21300008: DogBoy1sprite_4
+=======
+guid: 0714e3c0bdee77740a64a947f2e1ee91
+TextureImporter:
+  fileIDToRecycleName: {}
+>>>>>>> Stashed changes
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -36,7 +42,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< Updated upstream
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> Stashed changes
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -45,12 +55,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< Updated upstream
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   spritePixelsToUnits: 32
+=======
+  spritePixelsToUnits: 100
+>>>>>>> Stashed changes
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,6 +92,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< Updated upstream
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -192,6 +211,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 635034873bb397b4fa0a680149d7fa92
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 877ee92d99094f94fa5078c0b05d72d9
+>>>>>>> Stashed changes
     vertices: []
     indices: 
     edges: []
