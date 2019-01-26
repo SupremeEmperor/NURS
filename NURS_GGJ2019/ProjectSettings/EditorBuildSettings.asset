@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Luke/Menu.unity
-    guid: 5768e29359512a24085dfc37a9197b99
-  - enabled: 1
-    path: Assets/Luke/LukeTest.unity
-    guid: aef0bda27b2de0143959bb4bb57e926c
+    path: Assets/Luke/TheMenu.unity
+    guid: 2c1ecc2ec04fe4e4fa9043cd5a3a91f4
   m_configObjects: {}

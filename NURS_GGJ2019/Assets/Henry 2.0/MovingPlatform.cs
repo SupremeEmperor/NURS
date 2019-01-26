@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class MovingPlatform : MonoBehaviour
 {
     public Vector2 ActivePos;
+    private Vector2 OriginPos;
     public bool active = false;
     public float rate;
     private Rigidbody2D body;
@@ -13,21 +15,23 @@ public class MovingPlatform : MonoBehaviour
     public void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        OriginPos = transform.position;
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         if(active)
         {
             if(extent >= ActivePos.magnitude)
             {
                 body.velocity = Vector2.zero;
+                transform.position = OriginPos + ActivePos;
                 extent = ActivePos.magnitude;
             }
             else
             {
                 body.velocity = ActivePos.normalized * rate;
-                extent += rate * Time.deltaTime;
+                extent += rate * Time.fixedDeltaTime;
             }
         }
         else
@@ -36,11 +40,12 @@ public class MovingPlatform : MonoBehaviour
             {
                 body.velocity = Vector2.zero;
                 extent = 0;
+                transform.position = OriginPos;
             }
             else
             {
                 body.velocity = ActivePos.normalized * -rate;
-                extent -= rate * Time.deltaTime;
+                extent -= rate * Time.fixedDeltaTime;
             }
         }
     }

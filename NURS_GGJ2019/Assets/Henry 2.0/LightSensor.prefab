@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 5288402352894466348}
   - component: {fileID: 5288402352894466354}
   - component: {fileID: 5288402352894466355}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: LightSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 5288402352894466349}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 02f53823f4cd1c144b587be940ec1f63, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
