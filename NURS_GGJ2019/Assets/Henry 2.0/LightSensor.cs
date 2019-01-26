@@ -7,6 +7,7 @@ public class LightSensor : MonoBehaviour
 {
     public UnityEvent OnActivate;
     public UnityEvent OnDeactivate;
+    public bool toggler = false;
     public bool lit = false;
     public GameObject litUp;
 
@@ -22,11 +23,21 @@ public class LightSensor : MonoBehaviour
 
     public void LateUpdate()
     {
-        if(lit == false)
+        if(toggler == false)
         {
-            litUp.SetActive(false);
-            OnDeactivate.Invoke();
+            if(lit == false)
+            {
+                litUp.SetActive(false);
+                OnDeactivate.Invoke();
+            }
+            lit = false;
         }
+    }
+
+    public void Deactivate()
+    {
+        litUp.SetActive(false);
+        OnDeactivate.Invoke();
         lit = false;
     }
 }
