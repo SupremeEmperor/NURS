@@ -17,7 +17,7 @@ public class activePlayer : MonoBehaviour
     {
         pm = GetComponent<PlayerMovement>();
         gs = GetComponent<grabberscript>();
-        mouses = GetComponents<PointAtMouse>();
+        mouses = GameObject.FindObjectsOfType<PointAtMouse>();
         rb = GetComponent<Rigidbody2D>();
         a = arrow.GetComponent<SpriteRenderer>();
     }
