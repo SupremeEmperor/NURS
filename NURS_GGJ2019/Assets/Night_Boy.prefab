@@ -303,8 +303,9 @@ GameObject:
   - component: {fileID: 2727435921888769350}
   - component: {fileID: 3047948564596994503}
   - component: {fileID: 675429752748236059}
+  - component: {fileID: 8962713220888915079}
   m_Layer: 0
-  m_Name: Boy
+  m_Name: Night_Boy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,6 +502,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0054298625, y: -1.0171229}
   m_Size: {x: 1.0737932, y: 0.21856746}
   m_Direction: 1
+--- !u!114 &8962713220888915079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727435921888769345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece2a38a3e8b38f4e90620c1fd8f1a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
 --- !u!1 &2727435921925372387
 GameObject:
   m_ObjectHideFlags: 0
