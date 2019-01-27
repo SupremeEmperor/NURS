@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Luke/Factory Base 1.unity
+    guid: e222c755bf1b6c44681f4360c859bac5
+  - enabled: 1
+    path: Assets/Luke/Factory Base 2.unity
+    guid: 6af4a947e2063d24fbf1cefbecf18768
   m_configObjects: {}
