@@ -7,6 +7,7 @@ public class NightNextLevel : MonoBehaviour
 {
     bool Dog = false;
     bool Boy = false;
+    grabberscript theScript;
 
     private void Update()
     {
@@ -18,6 +19,10 @@ public class NightNextLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.GetComponent<grabberscript>().hit.collider.gameObject.name == "Doggo" )
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
         if (collision.gameObject.name == "Night_Boy")
         {
             Boy = true;
