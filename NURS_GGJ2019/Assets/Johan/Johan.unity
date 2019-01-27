@@ -538,6 +538,26 @@ PrefabInstance:
       propertyPath: OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8670587525659436275, guid: f1b9587e5037b7145beca3d18351cae5,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670587525659436275, guid: f1b9587e5037b7145beca3d18351cae5,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637277314670838393, guid: f1b9587e5037b7145beca3d18351cae5,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637277314670838393, guid: f1b9587e5037b7145beca3d18351cae5,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1b9587e5037b7145beca3d18351cae5, type: 3}
 --- !u!1001 &5359111556579796159
