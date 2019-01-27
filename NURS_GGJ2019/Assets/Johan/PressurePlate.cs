@@ -19,6 +19,7 @@ public class PressurePlate : MonoBehaviour
         if (collision.CompareTag("Interactor"))
         {
             ActivationState = true;
+            SwitchOn.Play();
             OnActivate.Invoke();
         }
     }
@@ -27,6 +28,7 @@ public class PressurePlate : MonoBehaviour
         if (collision.CompareTag("Interactor"))
         {
             ActivationState = false;
+            SwitchOff.Play();
             OnDeactivate.Invoke();
         }
     }
