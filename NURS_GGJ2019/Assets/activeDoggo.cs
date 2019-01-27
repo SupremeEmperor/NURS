@@ -7,12 +7,12 @@ public class activeDoggo : MonoBehaviour
     public bool active = false;
     private bool activeLock = false;
     private DoggoMovement dm;
-    private BoxCollider2D bc;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         dm = GetComponent<DoggoMovement>();
-        bc = GetComponent<BoxCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -39,13 +39,12 @@ public class activeDoggo : MonoBehaviour
         if(active) //changes here
         {
             dm.enabled = true;
-            bc.sharedMaterial.friction = 0f;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         else
         {
             dm.enabled = false;
-            bc.sharedMaterial.friction = 10f;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         }
-        print("Doggo" + bc.sharedMaterial.friction);
     }
 }
