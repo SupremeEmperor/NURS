@@ -25,7 +25,7 @@ public class LightSensor : MonoBehaviour
     {
         if(toggler == false)
         {
-            if(lit == false)
+            if(lit == false && litUp.activeInHierarchy)
             {
                 litUp.SetActive(false);
                 OnDeactivate.Invoke();
