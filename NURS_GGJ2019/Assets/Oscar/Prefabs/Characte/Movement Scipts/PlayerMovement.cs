@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //moves character
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        if(controller.m_Grounded)
+        if(controller.m_Grounded && Input.GetButtonDown("Jump"))
         {
             jumpSound.volume = Random.Range(.8f, 1f);
             jumpSound.pitch = Random.Range(.8f, 1.1f);
