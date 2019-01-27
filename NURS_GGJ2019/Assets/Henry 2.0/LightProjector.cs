@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightProjector : MonoBehaviour
 {
-    int layerMask = 1;
+    int layerMask = ((1 << 23) - 1) - (1 << 15);
     public GameObject projection;
     public GameObject litUp;
     float dist = 100f;
