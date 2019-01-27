@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3249568255468263257}
   - component: {fileID: 3249568255468263256}
-  - component: {fileID: 3249568255468263252}
-  - component: {fileID: 3249568255468263259}
   - component: {fileID: 3249568255468263258}
   - component: {fileID: 3249568255468263254}
   - component: {fileID: 3249568255468263253}
   - component: {fileID: 3249568255468263255}
+  - component: {fileID: 7196926634631189069}
   m_Layer: 0
   m_Name: Doggo
   m_TagString: Untagged
@@ -86,38 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &3249568255468263252
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3249568255468263263}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0036450883, y: -0.21304408}
-  m_Size: {x: 1.0605149, y: 0.5612264}
-  m_Direction: 1
---- !u!70 &3249568255468263259
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3249568255468263263}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.20958734, y: 0.012806535}
-  m_Size: {x: 0.62622595, y: 1.0120482}
-  m_Direction: 0
 --- !u!50 &3249568255468263258
 Rigidbody2D:
   serializedVersion: 4
@@ -205,6 +172,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7196926634631189069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249568255468263263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff046d236e34f9849863e130476b0289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3249568255768211925
 GameObject:
   m_ObjectHideFlags: 0

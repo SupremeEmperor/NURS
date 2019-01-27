@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class activePlayer : MonoBehaviour
 {
-    public GameObject player;
     public bool active = false;
 
     // Update is called once per frame
@@ -16,11 +15,13 @@ public class activePlayer : MonoBehaviour
         }
         if(active)
         {
-            player.GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<grabberscript>().enabled = true;
         }
         else
         {
-            player.GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<grabberscript>().enabled = false;
         }
     }
 }
