@@ -38,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         if(controller.m_Grounded)
         {
+            jumpSound.volume = Random.Range(.8f, 1f);
+            jumpSound.pitch = Random.Range(.8f, 1.1f);
             jumpSound.Play();
         }
         jump = false;
