@@ -9,6 +9,9 @@ public class activePlayer : MonoBehaviour
     private grabberscript gs;
     private PointAtMouse[] mouses;
     private Rigidbody2D rb;
+    private SpriteRenderer a;
+
+    public GameObject arrow;
 
     private void Awake()
     {
@@ -16,6 +19,7 @@ public class activePlayer : MonoBehaviour
         gs = GetComponent<grabberscript>();
         mouses = GetComponents<PointAtMouse>();
         rb = GetComponent<Rigidbody2D>();
+        a = arrow.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -33,6 +37,7 @@ public class activePlayer : MonoBehaviour
             {
                 p.enabled = true;
             }
+            a.enabled = true;
         }
         else
         {
@@ -43,6 +48,7 @@ public class activePlayer : MonoBehaviour
             {
                 p.enabled = false;
             }
+            a.enabled = false;
         }
     }
 }
