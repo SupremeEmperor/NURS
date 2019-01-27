@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
             walkSound.pitch = Random.Range(.8f, 1.1f);
             walkSound.Play();
         }
-
         if(Input.GetButtonDown("Jump"))
         {
             jump = true;

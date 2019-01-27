@@ -712,9 +712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893f1653c61da5a408c4cd77ff4acbdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  right_position: 0
-  left_position: -1.9
-  y_position: -0.6
 --- !u!1 &8284313322580438403
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +945,7 @@ GameObject:
   - component: {fileID: 8284313323559537337}
   - component: {fileID: 8284313323559537336}
   - component: {fileID: 8284313323559537335}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Night_Boy
   m_TagString: Interactor
   m_Icon: {fileID: 0}
@@ -1088,7 +1085,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 2097975
+    m_Bits: 2130743
   m_GroundCheck: {fileID: 8284313323864819058}
   m_CeilingCheck: {fileID: 8284313324047382525}
   m_CrouchDisableCollider: {fileID: 0}
@@ -1119,10 +1116,6 @@ MonoBehaviour:
   distance: 1
   grabpoint: {fileID: 8284313323572247877}
   throwForce: 3
-  notGrabbed:
-    serializedVersion: 2
-    m_Bits: 0
-  player: {fileID: 8284313323559537333}
   grabToPoint: {fileID: 8284313322563772734}
   pickupSound: {fileID: 5119963088772217032}
   dropSound: {fileID: 6959393499038741212}

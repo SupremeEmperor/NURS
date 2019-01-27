@@ -5,19 +5,15 @@ using UnityEngine;
 public class flip_raycast : MonoBehaviour
 {
     private Camera mainCam;
-    public float right_position = 0f;
-    public float left_position = -2.3f;
-    public float y_position = -0.6f;
-    
     private Vector3 face_right;
     private Vector3 face_left;
+    private Transform parent;
 
     // Start is called before the first frame update
     void Start()
     {
+        parent = transform.parent;
         mainCam = GameObject.FindObjectOfType<Camera>();
-        face_right = new Vector3(right_position, y_position, 0);
-        face_left = new Vector3(left_position, y_position, 0);
     }
 
     // Update is called once per frame
@@ -26,11 +22,13 @@ public class flip_raycast : MonoBehaviour
         Vector3 Difference = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         if(Difference.x < 0)
         {
-            transform.position = transform.parent.position + face_left;
+            //face left
+            transform.rotation = new Quaternion(0,180,0,0);
         }
         else
         {
-            transform.position = transform.parent.position + face_right;
+            //face_left right
+            transform.rotation = new Quaternion(0,0,0,0);
         }
     }
 }
