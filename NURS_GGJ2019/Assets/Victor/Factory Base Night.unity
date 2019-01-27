@@ -374,7 +374,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8e160a2a620644cd6afef9119dad1093, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df647c6793a494849902371b15655f57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -465,6 +465,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NightTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723072307082928946, guid: f43168beb0e442249b2932e68e96b0c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8659351460584722491, guid: f43168beb0e442249b2932e68e96b0c1,
         type: 3}
@@ -3227,6 +3232,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197731324988981246, guid: d9277020ee0d4b44dae1743615f87f55,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bcc5a5044a0656741acf22515ccf7dc3,
+        type: 3}
+    - target: {fileID: 5197731324988981246, guid: d9277020ee0d4b44dae1743615f87f55,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9277020ee0d4b44dae1743615f87f55, type: 3}
