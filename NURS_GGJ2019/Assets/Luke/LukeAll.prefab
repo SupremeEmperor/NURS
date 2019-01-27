@@ -502,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 8145059817229922986, guid: f43168beb0e442249b2932e68e96b0c1,
         type: 3}
       propertyPath: m_MaskInteraction
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8145059817229922986, guid: f43168beb0e442249b2932e68e96b0c1,
         type: 3}
