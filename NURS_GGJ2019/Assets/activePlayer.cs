@@ -44,5 +44,6 @@ public class activePlayer : MonoBehaviour
                 p.enabled = false;
             }
         }
+        print("Player" + bc.sharedMaterial.friction);
     }
 }

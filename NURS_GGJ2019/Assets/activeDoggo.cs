@@ -46,6 +46,6 @@ public class activeDoggo : MonoBehaviour
             dm.enabled = false;
             bc.sharedMaterial.friction = 10f;
         }
-        print(bc.sharedMaterial.friction);
+        print("Doggo" + bc.sharedMaterial.friction);
     }
 }
