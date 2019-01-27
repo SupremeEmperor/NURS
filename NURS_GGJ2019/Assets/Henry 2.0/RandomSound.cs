@@ -16,6 +16,7 @@ public class RandomSound : MonoBehaviour
     public void Activate()
     {
         source.clip = clips[Random.Range(0, clips.Length)];
+        source.pitch = Random.Range(.8f, 1.1f);
         source.Play();
     }
 }
