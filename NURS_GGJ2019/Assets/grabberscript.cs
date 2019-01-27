@@ -11,6 +11,7 @@ public class grabberscript : MonoBehaviour
     public float throwForce = 1f;
     public LayerMask notGrabbed;
     public GameObject player;
+    public Transform grabToPoint;
 
     // Update is called once per frame
     void Update()
@@ -20,7 +21,7 @@ public class grabberscript : MonoBehaviour
             if(!grabbed)
             {
                 //grab
-                hit = Physics2D.Raycast(transform.position, Vector2.right*transform.localScale.x, distance);
+                hit = Physics2D.Raycast(grabToPoint.position, Vector2.right*transform.localScale.x, distance);
                 if(hit.collider != null && hit.collider.gameObject.GetComponent("Grabbable") != null)
                 {
                     grabbed = true;
@@ -56,6 +57,6 @@ public class grabberscript : MonoBehaviour
     {
         Gizmos.color = Color.green;
 
-        Gizmos.DrawLine(transform.position, transform.position + Vector3.right*transform.localScale.x * distance);
+        Gizmos.DrawLine(grabToPoint.position, grabToPoint.position + Vector3.right*transform.localScale.x * distance);
     }
 }
