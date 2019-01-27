@@ -301,12 +301,20 @@ GameObject:
   - component: {fileID: 2727435921888769347}
   - component: {fileID: 2727435921888769348}
   - component: {fileID: 2727435921888769350}
+  - component: {fileID: 4522530186878199931}
   - component: {fileID: 3047948564596994503}
   - component: {fileID: 675429752748236059}
+<<<<<<< HEAD
   - component: {fileID: 2807143537367050270}
   m_Layer: 0
   m_Name: Night_Boy
   m_TagString: Interactor
+=======
+  - component: {fileID: 8962713220888915079}
+  m_Layer: 0
+  m_Name: Night_Boy
+  m_TagString: Untagged
+>>>>>>> 0305685c95a20227461a31879a2a9276308a4ac4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -473,6 +481,19 @@ MonoBehaviour:
     m_Bits: 0
   player: {fileID: 2727435921888769345}
   grabToPoint: {fileID: 2727435921600102605}
+--- !u!114 &4522530186878199931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727435921888769345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece2a38a3e8b38f4e90620c1fd8f1a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
 --- !u!114 &3047948564596994503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +523,11 @@ CapsuleCollider2D:
   m_Offset: {x: 0.04497573, y: -1.0171229}
   m_Size: {x: 0.76621914, y: 0.2185674}
   m_Direction: 1
+<<<<<<< HEAD
 --- !u!114 &2807143537367050270
+=======
+--- !u!114 &8962713220888915079
+>>>>>>> 0305685c95a20227461a31879a2a9276308a4ac4
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

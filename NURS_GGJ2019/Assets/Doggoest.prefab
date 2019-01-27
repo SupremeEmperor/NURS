@@ -8,7 +8,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1392090507}
+=======
+  - component: {fileID: 3249568255468263257}
+  - component: {fileID: 3485744070673293749}
+  - component: {fileID: 3249568255468263256}
+  - component: {fileID: 3249568255468263258}
+  - component: {fileID: 3249568255468263254}
+  - component: {fileID: 3249568255468263253}
+  - component: {fileID: 3249568255468263255}
+  - component: {fileID: 7196926634631189069}
+  - component: {fileID: 4495988915774495758}
+>>>>>>> 0305685c95a20227461a31879a2a9276308a4ac4
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -69,7 +81,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!212 &1901974023
+=======
+--- !u!114 &3485744070673293749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249568255468263263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbd9c8ce6fe58948be6c693d5d944ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
+--- !u!212 &3249568255468263256
+>>>>>>> 0305685c95a20227461a31879a2a9276308a4ac4
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,8 +245,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff046d236e34f9849863e130476b0289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!61 &1901974017
 BoxCollider2D:
+=======
+--- !u!61 &4495988915774495758
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249568255468263263}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &3249568255768211925
+GameObject:
+>>>>>>> 0305685c95a20227461a31879a2a9276308a4ac4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
