@@ -7,6 +7,15 @@ TextureImporter:
     21300004: BodyBoy1._2
     21300006: BodyBoy1._3
     21300008: BodyBoy1._4
+    21300010: BodyBoy1_0
+    21300012: BodyBoy1_1
+    21300014: BodyBoy1_2
+    21300016: BodyBoy1_3
+    21300018: BodyBoy1_4
+    21300020: BodyBoy1_5
+    21300022: BodyBoy1_6
+    21300024: BodyBoy1_7
+    21300026: BodyBoy1_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -89,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BodyBoy1._0
+      name: BodyBoy1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -97,19 +106,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467918d3b85994545a175f049d761638
+      spriteID: 118532b10dc19c64e9fa53c02eeb5d44
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBoy1._1
+      name: BodyBoy1_1
       rect:
         serializedVersion: 2
         x: 32
@@ -117,19 +126,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc25d330f7c46c46a2c358b48e077b2
+      spriteID: 81704f5dad3a7e74fa1d12f4b882ae43
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBoy1._2
+      name: BodyBoy1_2
       rect:
         serializedVersion: 2
         x: 64
@@ -137,19 +146,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb4fcc01a847bb84397db752cb5b1bdf
+      spriteID: f833978c42d38ee4d87a3d6db51e5ff1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBoy1._3
+      name: BodyBoy1_3
       rect:
         serializedVersion: 2
         x: 96
@@ -157,19 +166,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d93cec7297c0f23498cbfc87649e97b2
+      spriteID: b887744507e165044827e7578abe63f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBoy1._4
+      name: BodyBoy1_4
       rect:
         serializedVersion: 2
         x: 128
@@ -177,13 +186,93 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab3ec43581efff44eb3823150081546c
+      spriteID: 9e00a8dba197e024c8562cae94147b08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBoy1_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9754c70079e3414cb279983837d183b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBoy1_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c87e33f0aa6e3940855390b001f64ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBoy1_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26ee8b183309b6418052c7dfd4725f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBoy1_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210232f505c94594e9162f94d7af47fb
       vertices: []
       indices: 
       edges: []
