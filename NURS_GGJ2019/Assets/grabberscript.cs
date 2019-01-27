@@ -15,6 +15,8 @@ public class grabberscript : MonoBehaviour
     public AudioSource pickupSound;
     public AudioSource dropSound;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +57,7 @@ public class grabberscript : MonoBehaviour
                     hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                     pickupSound.Play();
                     GetComponent<BoxCollider2D>().enabled = true;
+
                 }
             }
             else
@@ -69,6 +72,7 @@ public class grabberscript : MonoBehaviour
                     hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                     hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = true;
                     dropSound.Play();
+                    GetComponent<BoxCollider2D>().enabled = false;
                 }
             }
         }

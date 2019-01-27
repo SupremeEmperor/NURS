@@ -8,12 +8,14 @@ public class activePlayer : MonoBehaviour
     private PlayerMovement pm;
     private grabberscript gs;
     private PointAtMouse[] mouses;
+    private BoxCollider2D bc;
 
     private void Awake()
     {
         pm = GetComponent<PlayerMovement>();
         gs = GetComponent<grabberscript>();
         mouses = GetComponents<PointAtMouse>();
+        bc = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -22,10 +24,11 @@ public class activePlayer : MonoBehaviour
         {
             active = !active;
         }
-        if(active)
+        if(active) //changes
         {
             pm.enabled = true;
             gs.enabled = true;
+            bc.sharedMaterial.friction = 0f;
             foreach(PointAtMouse p in mouses)
             {
                 p.enabled = true;
@@ -35,6 +38,7 @@ public class activePlayer : MonoBehaviour
         {
             pm.enabled = false;
             gs.enabled = false;
+            bc.sharedMaterial.friction = 10f;
             foreach(PointAtMouse p in mouses)
             {
                 p.enabled = false;
