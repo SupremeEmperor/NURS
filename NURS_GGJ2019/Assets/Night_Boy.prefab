@@ -42,7 +42,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e4f373dd7612aa84185383bd5e54c963, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -169,7 +169,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 52f8e56198dcc6c44a3c4a6bc160fa28, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -296,7 +296,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c587720f74d6b7c41b75406b85022a29, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -423,7 +423,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 52dd12c5c0cdc404b8e3c83895101cf4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1068,6 +1068,8 @@ MonoBehaviour:
   controller: {fileID: 8284313323559537339}
   runSpeed: 40
   anim: {fileID: 8284313322411285030}
+  walkSound: {fileID: 8002464040892077684}
+  jumpSound: {fileID: 7557337246148823556}
 --- !u!114 &8284313323559537339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,6 +1092,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 8284313323864819058}
   m_CeilingCheck: {fileID: 8284313324047382525}
   m_CrouchDisableCollider: {fileID: 0}
+  m_Grounded: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1121,6 +1124,8 @@ MonoBehaviour:
     m_Bits: 0
   player: {fileID: 8284313323559537333}
   grabToPoint: {fileID: 8284313322563772734}
+  pickupSound: {fileID: 5119963088772217032}
+  dropSound: {fileID: 6959393499038741212}
 --- !u!114 &8284313323559537337
 MonoBehaviour:
   m_ObjectHideFlags: 0

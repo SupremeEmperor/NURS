@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     bool jump = false;
     public Animator anim;
+    public AudioSource walkSound;
+    public AudioSource jumpSound;
     
     // Update is called once per frame
     void Update()
@@ -18,10 +20,17 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         
         anim.SetBool("Moving", horizontalMove != 0);
+        if(horizontalMove != 0 && !walkSound.isPlaying && controller.m_Grounded)
+        {
+            walkSound.volume = Random.Range(.8f, 1f);
+            walkSound.pitch = Random.Range(.8f, 1.1f);
+            walkSound.Play();
+        }
 
         if(Input.GetButtonDown("Jump"))
         {
             jump = true;
+            jumpSound.Play();
         }
     }
 

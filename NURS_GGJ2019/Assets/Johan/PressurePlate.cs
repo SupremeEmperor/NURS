@@ -11,6 +11,9 @@ public class PressurePlate : MonoBehaviour
     //use this for animation
     public bool ActivationState;
 
+    public AudioSource SwitchOn;
+    public AudioSource SwitchOff;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Interactor"))
