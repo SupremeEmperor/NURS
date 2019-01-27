@@ -5,8 +5,17 @@ using UnityEngine;
 public class activePlayer : MonoBehaviour
 {
     public bool active = false;
+    private PlayerMovement pm;
+    private grabberscript gs;
+    private PointAtMouse[] mouses;
 
-    // Update is called once per frame
+    private void Awake()
+    {
+        pm = GetComponent<PlayerMovement>();
+        gs = GetComponent<grabberscript>();
+        mouses = GetComponents<PointAtMouse>();
+    }
+
     void Update()
     {
         if(Input.GetButtonDown("SwitchPlayer"))
@@ -15,13 +24,21 @@ public class activePlayer : MonoBehaviour
         }
         if(active)
         {
-            GetComponent<PlayerMovement>().enabled = true;
-            GetComponent<grabberscript>().enabled = true;
+            pm.enabled = true;
+            gs.enabled = true;
+            foreach(PointAtMouse p in mouses)
+            {
+                p.enabled = true;
+            }
         }
         else
         {
-            GetComponent<PlayerMovement>().enabled = false;
-            GetComponent<grabberscript>().enabled = false;
+            pm.enabled = false;
+            gs.enabled = false;
+            foreach(PointAtMouse p in mouses)
+            {
+                p.enabled = false;
+            }
         }
     }
 }
