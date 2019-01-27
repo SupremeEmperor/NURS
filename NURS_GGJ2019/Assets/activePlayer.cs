@@ -5,29 +5,44 @@ using UnityEngine;
 public class activePlayer : MonoBehaviour
 {
     public bool active = false;
-    public PointAtMouse flashLightPoint;
-    public PointAtMouse armPoint;
+    private PlayerMovement pm;
+    private grabberscript gs;
+    private PointAtMouse[] mouses;
+    private BoxCollider2D bc;
 
-    // Update is called once per frame
+    private void Awake()
+    {
+        pm = GetComponent<PlayerMovement>();
+        gs = GetComponent<grabberscript>();
+        mouses = GetComponents<PointAtMouse>();
+        bc = GetComponent<BoxCollider2D>();
+    }
+
     void Update()
     {
         if(Input.GetButtonDown("SwitchPlayer"))
         {
             active = !active;
         }
-        if(active)
+        if(active) //changes
         {
-            GetComponent<PlayerMovement>().enabled = true;
-            GetComponent<grabberscript>().enabled = true;
-            flashLightPoint.enabled = true;
-            armPoint.enabled = true;
+            pm.enabled = true;
+            gs.enabled = true;
+            bc.sharedMaterial.friction = 0f;
+            foreach(PointAtMouse p in mouses)
+            {
+                p.enabled = true;
+            }
         }
         else
         {
-            GetComponent<PlayerMovement>().enabled = false;
-            GetComponent<grabberscript>().enabled = false;
-            armPoint.enabled = false;
-            flashLightPoint.enabled = false;
+            pm.enabled = false;
+            gs.enabled = false;
+            bc.sharedMaterial.friction = 10f;
+            foreach(PointAtMouse p in mouses)
+            {
+                p.enabled = false;
+            }
         }
     }
 }

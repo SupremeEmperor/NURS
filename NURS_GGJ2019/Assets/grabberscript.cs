@@ -12,6 +12,10 @@ public class grabberscript : MonoBehaviour
     public Transform grabToPoint;
     private Camera mainCam;
     private float throwModifier = 1f;
+    public AudioSource pickupSound;
+    public AudioSource dropSound;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,42 +25,6 @@ public class grabberscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButtonDown("Pickup"))
-        {
-            if(!grabbed)
-            {
-                //grab
-                hit = Physics2D.Raycast(grabToPoint.position, Vector2.right*transform.localScale.x, distance);
-                if(hit.collider != null && hit.collider.gameObject.GetComponent("Grabbable") != null)
-                {
-                    grabbed = true;
-                    hit.collider.gameObject.transform.parent = transform;
-                    hit.collider.gameObject.transform.position = grabpoint.position;
-                    hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-                    hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                    GetComponent<BoxCollider2D>().enabled = true;
-                }
-            }
-            else
-            {
-                //drop
-                grabbed = false;
-                if(hit.collider.gameObject.GetComponent<Rigidbody2D>() != null)
-                {
-                    hit.collider.gameObject.transform.parent = null;
-                    hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwForce * throwModifier;
-                    hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
-                    hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    GetComponent<BoxCollider2D>().enabled = false;
-                }
-            }
-        }
-        if(grabbed)
-        {
-            hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-        }
-
         Vector3 Difference = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         if(Difference.x < 0)
         {
@@ -66,6 +34,53 @@ public class grabberscript : MonoBehaviour
         {
             throwModifier = 1f;
         }
+
+        if (Input.GetButtonDown("Pickup"))
+        {
+            if(!grabbed)
+            {
+            //grab
+            if(Difference.x < 0)
+            {
+                hit = Physics2D.Raycast(grabToPoint.position, Vector2.left*transform.localScale.x, distance);
+            }
+            else
+            {
+                hit = Physics2D.Raycast(grabToPoint.position, Vector2.right*transform.localScale.x, distance);
+            }
+                if(hit.collider != null && hit.collider.gameObject.GetComponent("Grabbable") != null)
+                {
+                    grabbed = true;
+                    hit.collider.gameObject.transform.parent = transform;
+                    hit.collider.gameObject.transform.position = grabpoint.position;
+                    hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                    hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                    pickupSound.Play();
+                    GetComponent<BoxCollider2D>().enabled = true;
+
+                }
+            }
+            else
+            {
+                //drop
+                grabbed = false;
+                if(hit.collider.gameObject.GetComponent<Rigidbody2D>() != null)
+                {
+                    hit.collider.gameObject.transform.parent = null;
+                    hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwForce * new Vector2(throwModifier, 1);
+                    print(new Vector2(transform.localScale.x, 1) * throwForce * throwModifier);
+                    hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                    hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                    dropSound.Play();
+                    GetComponent<BoxCollider2D>().enabled = false;
+                }
+            }
+        }
+        if(grabbed)
+        {
+            hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+        }
+
     }
 
     void OnDrawGizmos()

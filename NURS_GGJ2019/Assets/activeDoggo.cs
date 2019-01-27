@@ -6,10 +6,19 @@ public class activeDoggo : MonoBehaviour
 {
     public bool active = false;
     private bool activeLock = false;
+    private DoggoMovement dm;
+    private BoxCollider2D bc;
+
+    private void Awake()
+    {
+        dm = GetComponent<DoggoMovement>();
+        bc = GetComponent<BoxCollider2D>();
+    }
 
     // Update is called once per frame
     void Update()
     {
+
         if (transform.parent != null)
         {
             activeLock = true;
@@ -18,6 +27,7 @@ public class activeDoggo : MonoBehaviour
         {
             activeLock = false;
         }
+
         if(Input.GetButtonDown("SwitchPlayer"))
         {
             if(!activeLock)
@@ -25,13 +35,17 @@ public class activeDoggo : MonoBehaviour
             active = !active;
             }
         }
-        if(active)
+
+        if(active) //changes here
         {
-            GetComponent<DoggoMovement>().enabled = true;
+            dm.enabled = true;
+            bc.sharedMaterial.friction = 0f;
         }
         else
         {
-            GetComponent<DoggoMovement>().enabled = false;
+            dm.enabled = false;
+            bc.sharedMaterial.friction = 10f;
         }
+        print(bc.sharedMaterial.friction);
     }
 }
