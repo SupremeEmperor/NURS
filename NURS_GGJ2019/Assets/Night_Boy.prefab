@@ -644,8 +644,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
-  flashLightPoint: {fileID: 0}
-  armPoint: {fileID: 0}
 --- !u!1 &8284313323572247876
 GameObject:
   m_ObjectHideFlags: 0
