@@ -2619,6 +2619,8 @@ MonoBehaviour:
   ActivePos: {x: 0, y: -2}
   active: 0
   rate: 3
+  differentRates: 0
+  rateBack: 0
 --- !u!50 &260383744
 Rigidbody2D:
   serializedVersion: 4
@@ -2827,7 +2829,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -123
   m_Sprite: {fileID: 21300000, guid: 8e160a2a620644cd6afef9119dad1093, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3423,6 +3425,8 @@ MonoBehaviour:
   ActivePos: {x: 0, y: 3}
   active: 0
   rate: 10
+  differentRates: 0
+  rateBack: 0
 --- !u!50 &595116211
 Rigidbody2D:
   serializedVersion: 4
@@ -4136,6 +4140,8 @@ MonoBehaviour:
   ActivePos: {x: 0, y: -2}
   active: 0
   rate: 3
+  differentRates: 0
+  rateBack: 0
 --- !u!50 &1066688400
 Rigidbody2D:
   serializedVersion: 4
@@ -4409,6 +4415,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ActivationState: 0
+  SwitchOn: {fileID: 0}
+  SwitchOff: {fileID: 0}
 --- !u!61 &1247809515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4564,6 +4572,8 @@ MonoBehaviour:
   ActivePos: {x: 0, y: 4.8}
   active: 0
   rate: 5
+  differentRates: 0
+  rateBack: 0
 --- !u!50 &1328969242
 Rigidbody2D:
   serializedVersion: 4
@@ -4751,6 +4761,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ActivationState: 0
+  SwitchOn: {fileID: 0}
+  SwitchOff: {fileID: 0}
 --- !u!61 &1350196758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5346,6 +5358,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ActivationState: 0
+  SwitchOn: {fileID: 0}
+  SwitchOff: {fileID: 0}
 --- !u!61 &1660412769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5468,6 +5482,7 @@ MonoBehaviour:
   litUp: {fileID: 0}
   lit: 0
   Source: 1
+  biDirectional: 0
 --- !u!114 &1686535054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5609,6 +5624,8 @@ MonoBehaviour:
   ActivePos: {x: 0, y: 3}
   active: 0
   rate: 10
+  differentRates: 0
+  rateBack: 0
 --- !u!50 &1874140315
 Rigidbody2D:
   serializedVersion: 4
@@ -6088,6 +6105,8 @@ MonoBehaviour:
   ActivePos: {x: 0, y: -2}
   active: 0
   rate: 3
+  differentRates: 0
+  rateBack: 0
 --- !u!50 &2113047620
 Rigidbody2D:
   serializedVersion: 4
