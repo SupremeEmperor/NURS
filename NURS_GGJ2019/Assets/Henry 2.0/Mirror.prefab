@@ -314,6 +314,7 @@ MonoBehaviour:
   litUp: {fileID: 5990242234560829223}
   lit: 0
   Source: 0
+  biDirectional: 0
 --- !u!1001 &6980811929726448938
 PrefabInstance:
   m_ObjectHideFlags: 0
