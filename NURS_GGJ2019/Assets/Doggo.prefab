@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3249568255468263254}
   - component: {fileID: 3249568255468263253}
   - component: {fileID: 3249568255468263255}
+  - component: {fileID: 7196926634631189069}
   m_Layer: 0
   m_Name: Doggo
   m_TagString: Untagged
@@ -205,6 +206,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7196926634631189069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249568255468263263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff046d236e34f9849863e130476b0289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3249568255768211925
 GameObject:
   m_ObjectHideFlags: 0
