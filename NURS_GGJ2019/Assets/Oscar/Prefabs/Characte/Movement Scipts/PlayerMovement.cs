@@ -29,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump"))
         {
             jump = true;
-            jumpSound.Play();
         }
     }
 
@@ -37,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
     {
         //moves character
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+        if(controller.m_Grounded)
+        {
+            jumpSound.Play();
+        }
         jump = false;
     }
 }
