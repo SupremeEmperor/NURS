@@ -5,12 +5,10 @@ using UnityEngine;
 public class grabberscript : MonoBehaviour
 {
     public bool grabbed = false;
-    RaycastHit2D hit;
+    public RaycastHit2D hit;
     public float distance = 1f;
     public Transform grabpoint;
     public float throwForce = 1f;
-    public LayerMask notGrabbed;
-    public GameObject player;
     public Transform grabToPoint;
     private Camera mainCam;
     private float throwModifier = 1f;
@@ -33,15 +31,14 @@ public class grabberscript : MonoBehaviour
                 if(hit.collider != null && hit.collider.gameObject.GetComponent("Grabbable") != null)
                 {
                     grabbed = true;
-                    hit.collider.gameObject.transform.parent = player.transform;
+                    hit.collider.gameObject.transform.parent = transform;
                     hit.collider.gameObject.transform.position = grabpoint.position;
                     hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                     hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                    player.GetComponent<BoxCollider2D>().enabled = true;
+                    GetComponent<BoxCollider2D>().enabled = true;
                 }
             }
-            else if(!Physics2D.OverlapPoint(grabpoint.position,notGrabbed))
-            //else
+            else
             {
                 //drop
                 grabbed = false;
@@ -51,7 +48,7 @@ public class grabberscript : MonoBehaviour
                     hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwForce * throwModifier;
                     hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                     hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    player.GetComponent<BoxCollider2D>().enabled = false;
+                    GetComponent<BoxCollider2D>().enabled = false;
                 }
             }
         }
@@ -75,6 +72,6 @@ public class grabberscript : MonoBehaviour
     {
         Gizmos.color = Color.green;
 
-        Gizmos.DrawLine(grabToPoint.position, grabToPoint.position + Vector3.right*transform.localScale.x * distance);
+        Gizmos.DrawLine(grabToPoint.position, grabToPoint.position + Vector3.right*transform.localScale.x * distance * throwModifier);
     }
 }
