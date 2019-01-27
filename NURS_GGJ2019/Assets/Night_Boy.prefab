@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3992682777347838986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: -1.02, z: 0}
+  m_LocalPosition: {x: 0, y: -0.967, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8284313323559537334}
@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3992682777347838986}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 2
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.4
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1540,7 +1540,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4654,7 +4654,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e46e3355ade26224c81f80afd801b558, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4675,7 +4675,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 5
+  m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -5636,12 +5636,12 @@ GameObject:
   - component: {fileID: 8284313323559537334}
   - component: {fileID: 8284313323559537343}
   - component: {fileID: 8284313323559537342}
+  - component: {fileID: 8284313323559537336}
   - component: {fileID: 8284313323559537341}
   - component: {fileID: 8284313323559537340}
   - component: {fileID: 8284313323559537339}
   - component: {fileID: 8284313323559537338}
   - component: {fileID: 8284313323559537337}
-  - component: {fileID: 8284313323559537336}
   - component: {fileID: 8284313323559537335}
   m_Layer: 15
   m_Name: Night_Boy
@@ -5715,7 +5715,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04393959, y: -0.16355014}
+  m_Offset: {x: 0.04393959, y: -0.13365972}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5726,8 +5726,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7360594, y: 1.8712296}
+  m_Size: {x: 0.7360594, y: 1.8114488}
   m_EdgeRadius: 0
+--- !u!70 &8284313323559537336
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284313323559537333}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 47de39b0b2306204e97bd4f5110e251d, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04497573, y: -1.0171229}
+  m_Size: {x: 0.76621914, y: 0.2185674}
+  m_Direction: 1
 --- !u!50 &8284313323559537341
 Rigidbody2D:
   serializedVersion: 4
@@ -5831,22 +5847,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activationRadius: 1
---- !u!70 &8284313323559537336
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284313323559537333}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 47de39b0b2306204e97bd4f5110e251d, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.04497573, y: -1.0171229}
-  m_Size: {x: 0.76621914, y: 0.2185674}
-  m_Direction: 1
 --- !u!114 &8284313323559537335
 MonoBehaviour:
   m_ObjectHideFlags: 0
