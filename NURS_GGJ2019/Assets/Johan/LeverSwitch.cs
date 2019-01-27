@@ -9,10 +9,19 @@ public class LeverSwitch : MonoBehaviour
     public UnityEvent OnDeactivate;
 
     public bool ActivationState;
-    // Update is called once per frame
-    void Update()
-    {
-               
-    }
     
+    public void Activate()
+    { 
+        if (!ActivationState)
+        {
+            ActivationState = true;
+            OnActivate.Invoke();
+        }
+        else
+        {
+            ActivationState = false;
+            OnDeactivate.Invoke();
+        }
+    }
+
 }
