@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2727435921121039459}
   - component: {fileID: 2727435921121039460}
   - component: {fileID: 2727435921121039461}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: BodyBoy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 2727435921600102605}
   - component: {fileID: 2979366330945011231}
   - component: {fileID: 2727435921600102607}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2727435921691091438}
   - component: {fileID: 2727435921691091424}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ArmBoy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,8 @@ GameObject:
   - component: {fileID: 2727435921888769348}
   - component: {fileID: 2727435921888769350}
   - component: {fileID: 3047948564596994503}
-  m_Layer: 0
+  - component: {fileID: 5686979076644781911}
+  m_Layer: 15
   m_Name: Night_Boy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +370,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.14228356}
+  m_Offset: {x: 0, y: -0.093741536}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -380,7 +381,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.07, y: 1.9307072}
+  m_Size: {x: 1.07, y: 1.8336232}
   m_EdgeRadius: 0
 --- !u!50 &2727435921888769351
 Rigidbody2D:
@@ -484,6 +485,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activationRadius: 1
+--- !u!70 &5686979076644781911
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727435921888769345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00061863946, y: -1.0231067}
+  m_Size: {x: 1.0694807, y: 0.17736913}
+  m_Direction: 1
 --- !u!1 &2727435921925372387
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2727435921925372388}
   - component: {fileID: 2727435921925372389}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ArmBoyMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2727435922121046114}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -569,7 +586,7 @@ GameObject:
   - component: {fileID: 2727435922813847806}
   - component: {fileID: 2727435922813847807}
   - component: {fileID: 2727435922813847792}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: HeadBoy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2727435922937037596}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2727435922985333601}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: CeillingCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

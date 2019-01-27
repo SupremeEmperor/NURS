@@ -20,18 +20,8 @@ public class LightProjector : MonoBehaviour
         projection.SetActive(true);
         
         Vector2 dir = new Vector2(Mathf.Cos(theta / 180f * Mathf.PI), Mathf.Sin(theta/ 180f * Mathf.PI));
-        RaycastHit2D[] hits = new RaycastHit2D[2];
-        int count = Physics2D.RaycastNonAlloc(from, dir, hits, dist, layerMask);
-        RaycastHit2D hit;
+        RaycastHit2D hit = Physics2D.Raycast(from, dir, dist, layerMask);
 
-        if(count > 0 && hits[0].collider.gameObject == gameObject)
-        {
-            hit = hits[1];
-        }
-        else
-        {
-            hit = hits[0];
-        }
         if(hit.collider != null)
         {
             projection.transform.localScale = new Vector3(hit.distance, projection.transform.localScale.y, 1f);
