@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PointAtMouse : MonoBehaviour
 {
-    public Camera mainCam;
+    private Camera mainCam;
 
     public void Awake()
     {
