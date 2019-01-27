@@ -17,4 +17,19 @@ public class Rotate : MonoBehaviour
         }
         rotThisFrame = false;
     }
+
+    public void setRotContinuous(bool b)
+    {
+        rotContinuous = b;
+    }
+
+    public void setRotThisFrame(bool b)
+    {
+        rotThisFrame = b;
+    }
+
+    public void setReverse(bool b)
+    {
+        reverse = b;
+    }
 }

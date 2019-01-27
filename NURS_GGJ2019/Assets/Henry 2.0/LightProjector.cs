@@ -10,6 +10,7 @@ public class LightProjector : MonoBehaviour
     float dist = 100f;
     public bool lit = false;
     public bool Source = false;
+    public bool biDirectional;
 
     public void Project(float theta, Vector3 from)
     {
@@ -40,7 +41,7 @@ public class LightProjector : MonoBehaviour
             Vector2 pAngles = new Vector2(Mathf.Cos(hit.collider.transform.eulerAngles.z * Mathf.PI / 180f), Mathf.Sin(hit.collider.transform.eulerAngles.z * Mathf.PI / 180f));
             Vector2 tAngles = new Vector2(Mathf.Cos(theta * Mathf.PI / 180f), Mathf.Sin(theta * Mathf.PI / 180f));
             float dotProd = Vector2.Dot(pAngles, tAngles);
-            if(dotProd < 0)
+            if(biDirectional && dotProd < 0)
             {
                 return;
             }
