@@ -9,6 +9,8 @@ public class MovingPlatform : MonoBehaviour
     private Vector2 OriginPos;
     public bool active = false;
     public float rate;
+    public bool differentRates = false;
+    public float rateBack;
     private Rigidbody2D body;
     float extent = 0;
 
@@ -44,8 +46,17 @@ public class MovingPlatform : MonoBehaviour
             }
             else
             {
-                body.velocity = ActivePos.normalized * -rate;
-                extent -= rate * Time.fixedDeltaTime;
+                if(differentRates)
+                {
+                    body.velocity = ActivePos.normalized * -rateBack;
+                    extent -= rateBack * Time.fixedDeltaTime;
+                }
+                else
+                {
+                    body.velocity = ActivePos.normalized * -rate;
+                    extent -= rate * Time.fixedDeltaTime;
+                }
+                
             }
         }
     }
