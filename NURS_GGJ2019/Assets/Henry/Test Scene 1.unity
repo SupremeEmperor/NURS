@@ -3409,6 +3409,7 @@ GameObject:
   - component: {fileID: 803248520}
   - component: {fileID: 803248519}
   - component: {fileID: 803248518}
+  - component: {fileID: 803248523}
   - component: {fileID: 803248517}
   - component: {fileID: 803248516}
   - component: {fileID: 803248515}
@@ -3440,6 +3441,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   player: {fileID: 803248513}
+  grabToPoint: {fileID: 0}
 --- !u!61 &803248515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3538,6 +3540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 803248517}
   runSpeed: 40
+  anim: {fileID: 0}
 --- !u!50 &803248519
 Rigidbody2D:
   serializedVersion: 4
@@ -3640,6 +3643,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803248523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803248513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86daa329fbc0e2a44b290e8638cd775a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activationRadius: 1
 --- !u!1 &819915895
 GameObject:
   m_ObjectHideFlags: 0
