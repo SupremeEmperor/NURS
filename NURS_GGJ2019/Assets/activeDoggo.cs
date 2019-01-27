@@ -9,6 +9,8 @@ public class activeDoggo : MonoBehaviour
     private DoggoMovement dm;
     private Rigidbody2D rb;
 
+    public RandomSound bork;
+
     private void Awake()
     {
         dm = GetComponent<DoggoMovement>();
@@ -33,6 +35,10 @@ public class activeDoggo : MonoBehaviour
             if(!activeLock)
             {
             active = !active;
+                if (!active)
+                {
+                    bork.Activate();
+                }
             }
         }
 
