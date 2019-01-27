@@ -7900,6 +7900,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8284313323559537335, guid: 54753e508d3dc58459b672c0bb9ca623,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 582068464923443768, guid: 54753e508d3dc58459b672c0bb9ca623,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54753e508d3dc58459b672c0bb9ca623, type: 3}
 --- !u!1 &1181709867
@@ -8049,11 +8059,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4151658494782654129, guid: bc02c28e1431c614d8b053fb766f1dd0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5405171516708790464, guid: bc02c28e1431c614d8b053fb766f1dd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8064,6 +8069,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4151658494782654129, guid: bc02c28e1431c614d8b053fb766f1dd0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405171515831082150, guid: bc02c28e1431c614d8b053fb766f1dd0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5405171516708790479, guid: bc02c28e1431c614d8b053fb766f1dd0,
         type: 3}
       propertyPath: m_Enabled
@@ -8073,11 +8088,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5405171515831082150, guid: bc02c28e1431c614d8b053fb766f1dd0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5405171515923312414, guid: bc02c28e1431c614d8b053fb766f1dd0,
         type: 3}
