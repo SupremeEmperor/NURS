@@ -12,10 +12,18 @@ public class grabberscript : MonoBehaviour
     public LayerMask notGrabbed;
     public GameObject player;
     public Transform grabToPoint;
+    private Camera mainCam;
+    private float throwModifier = 1f;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        mainCam = GameObject.FindObjectOfType<Camera>();
+    }
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetButtonDown("Pickup"))
         {
             if(!grabbed)
@@ -40,7 +48,7 @@ public class grabberscript : MonoBehaviour
                 if(hit.collider.gameObject.GetComponent<Rigidbody2D>() != null)
                 {
                     hit.collider.gameObject.transform.parent = null;
-                    hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwForce;
+                    hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwForce * throwModifier;
                     hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                     hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = true;
                     player.GetComponent<BoxCollider2D>().enabled = false;
@@ -50,6 +58,16 @@ public class grabberscript : MonoBehaviour
         if(grabbed)
         {
             hit.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+        }
+
+        Vector3 Difference = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        if(Difference.x < 0)
+        {
+            throwModifier = -1f;
+        }
+        else
+        {
+            throwModifier = 1f;
         }
     }
 
