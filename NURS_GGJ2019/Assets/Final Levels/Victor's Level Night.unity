@@ -142,6 +142,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LukeAll
       objectReference: {fileID: 0}
+    - target: {fileID: 4137246142650301588, guid: bc02c28e1431c614d8b053fb766f1dd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3312799781266407704, guid: bc02c28e1431c614d8b053fb766f1dd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -215,7 +220,7 @@ PrefabInstance:
     - target: {fileID: 6695326494882254061, guid: bc02c28e1431c614d8b053fb766f1dd0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5405171515831082150, guid: bc02c28e1431c614d8b053fb766f1dd0,
         type: 3}

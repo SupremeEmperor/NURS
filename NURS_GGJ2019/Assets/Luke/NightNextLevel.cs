@@ -5,15 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class NightNextLevel : MonoBehaviour
 {
+    public Animator animator;
     bool Dog = false;
     bool Boy = false;
     grabberscript theScript;
+    public GameObject myObject;
 
     private void Update()
     {
         if(Boy == true && Dog == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            myObject.GetComponent<TrueExit>().callAnimation();
         }
     }
 
@@ -21,7 +23,7 @@ public class NightNextLevel : MonoBehaviour
     {
         if (collision.GetComponent<grabberscript>().hit.collider.gameObject.name == "Doggo" )
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            myObject.GetComponent<TrueExit>().callAnimation();
         }
         if (collision.gameObject.name == "Night_Boy")
         {
@@ -44,5 +46,6 @@ public class NightNextLevel : MonoBehaviour
             Dog = false;
         }
     }
+
 
 }
