@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PointAtMouse : MonoBehaviour
+[RequireComponent(typeof(SpriteRenderer))]
+public class FlipWithMouse : MonoBehaviour
 {
     private Camera mainCam;
+    private SpriteRenderer sr;
 
     public void Awake()
     {
         mainCam = GameObject.FindObjectOfType<Camera>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     public void Update()
     {
         Vector3 Difference = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(Difference.y, Difference.x) * 180 / Mathf.PI);
+        sr.flipX = Difference.x < 0;
     }
 }
