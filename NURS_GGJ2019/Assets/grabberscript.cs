@@ -12,6 +12,8 @@ public class grabberscript : MonoBehaviour
     public Transform grabToPoint;
     private Camera mainCam;
     private float throwModifier = 1f;
+    public AudioSource pickupSound;
+    public AudioSource dropSound;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +53,7 @@ public class grabberscript : MonoBehaviour
                     hit.collider.gameObject.transform.position = grabpoint.position;
                     hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                     hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                    pickupSound.Play();
                     GetComponent<BoxCollider2D>().enabled = true;
                 }
             }
@@ -65,7 +68,7 @@ public class grabberscript : MonoBehaviour
                     print(new Vector2(transform.localScale.x, 1) * throwForce * throwModifier);
                     hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                     hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    GetComponent<BoxCollider2D>().enabled = false;
+                    dropSound.Play();
                 }
             }
         }
