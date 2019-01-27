@@ -16,13 +16,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        
-        anim.SetBool("Moving", horizontalMove != 0);
 
         if(Input.GetButtonDown("Jump"))
         {
             jump = true;
         }
+
+        anim.SetBool("Moving", horizontalMove != 0);
     }
 
     void FixedUpdate ()
