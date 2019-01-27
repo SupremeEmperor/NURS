@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: 6e01d762ceecf0e448a6589c12eac3a3
-=======
-guid: 1fe0cbba8c60d534dae82e570c59db2f
->>>>>>> master
-=======
-guid: 1fe0cbba8c60d534dae82e570c59db2f
->>>>>>> master
+guid: 827cb5a12a5dbb547bf2bfae74def746
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
