@@ -12,12 +12,48 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Luke/Factory Base 1.unity
-    guid: e222c755bf1b6c44681f4360c859bac5
+    path: Assets/Final Levels/Level 1 Day.unity
+    guid: 6fe1b4726726fb4409d3890ba94143d0
   - enabled: 1
-    path: Assets/Luke/Factory Base 2.unity
-    guid: 6af4a947e2063d24fbf1cefbecf18768
+    path: Assets/Final Levels/Factory Enterance Day.unity
+    guid: c38b0a02d715332488d262245860e6be
   - enabled: 1
-    path: Assets/Luke/Factory Base 3.unity
-    guid: 7fbdab10a43ed4744ac2763717f4a56b
+    path: Assets/Final Levels/Lvl 3 Day.unity
+    guid: dfa381646477f274f91cb1ca63ee5e92
+  - enabled: 1
+    path: Assets/Final Levels/Victor's Level Day.unity
+    guid: 925dbca2f225cfa42babefea60c0f749
+  - enabled: 1
+    path: Assets/Final Levels/Lvl 4 Day.unity
+    guid: ce5d47d03acc016489becca2c65dbdd2
+  - enabled: 1
+    path: Assets/Final Levels/Henry2Level1Day.unity
+    guid: c319ac68795717649b11e81d1a877f4d
+  - enabled: 1
+    path: Assets/Final Levels/Henry2Level2Day.unity
+    guid: a97db453f0d75a044a1ec8c59d1ea6c4
+  - enabled: 1
+    path: Assets/Final Levels/Test Scene 6.unity
+    guid: c244dcecdeb3cad498e2cbe125499073
+  - enabled: 1
+    path: Assets/Final Levels/Henry2Level2Night.unity
+    guid: 34556c72262b4ac40af2e0d670af6bcb
+  - enabled: 1
+    path: Assets/Final Levels/Henry2Level1Night.unity
+    guid: 397c5695b97fd3f418fcc630cba5fb71
+  - enabled: 1
+    path: Assets/Final Levels/Lvl 4 Night.unity
+    guid: 45fc9faea93e50a4b8d36b267350704d
+  - enabled: 1
+    path: Assets/Final Levels/Victor's Level Night.unity
+    guid: 85ff09541ebfb5743b951f36cc169cf1
+  - enabled: 1
+    path: Assets/Final Levels/Lvl 3 Night.unity
+    guid: 7bde0ca5dfe6c4f47a7cdc0a761d4e73
+  - enabled: 1
+    path: Assets/Final Levels/Factory Enterance Night - Copy.unity
+    guid: 922b0c410398e334aa0abb093de7fe27
+  - enabled: 1
+    path: Assets/Final Levels/Level 1 Night.unity
+    guid: a53d6ca0da94e1d41b65f8cda0f99214
   m_configObjects: {}

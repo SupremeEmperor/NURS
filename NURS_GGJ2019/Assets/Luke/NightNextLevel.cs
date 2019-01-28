@@ -21,7 +21,11 @@ public class NightNextLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<grabberscript>().hit.collider.gameObject.name == "Doggo" )
+        if(collision.GetComponent<grabberscript>().held == null)
+        {
+            return;
+        }
+        if (collision.GetComponent<grabberscript>().held.name == "Doggo Varient" && collision.GetComponent<grabberscript>().held.name == "Doggo")
         {
             myObject.GetComponent<TrueExit>().callAnimation();
         }
@@ -29,7 +33,7 @@ public class NightNextLevel : MonoBehaviour
         {
             Boy = true;
         }
-        if (collision.gameObject.name == "Doggo")
+        if (collision.GetComponent<grabberscript>().held.name == "Doggo Varient" && collision.GetComponent<grabberscript>().held.name == "Doggo")
         {
             Dog = true;
         }
@@ -37,11 +41,15 @@ public class NightNextLevel : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.GetComponent<grabberscript>().held == null)
+        {
+            return;
+        }
         if (collision.gameObject.name == "Night_Boy")
         {
             Boy = false;
         }
-        if (collision.gameObject.name == "Doggo")
+        if (collision.GetComponent<grabberscript>().held.name == "Doggo Varient" && collision.GetComponent<grabberscript>().held.name == "Doggo")
         {
             Dog = false;
         }
