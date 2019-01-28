@@ -7,7 +7,7 @@ public class activePlayer : MonoBehaviour
     public bool active = false;
     private PlayerMovement pm;
     private grabberscript gs;
-    private PointAtMouse[] mouses;
+    //private PointAtMouse[] mouses;
     private Rigidbody2D rb;
     private SpriteRenderer a;
 
@@ -17,7 +17,7 @@ public class activePlayer : MonoBehaviour
     {
         pm = GetComponent<PlayerMovement>();
         gs = GetComponent<grabberscript>();
-        mouses = GameObject.FindObjectsOfType<PointAtMouse>();
+        //mouses = GameObject.FindObjectsOfType<PointAtMouse>();
         rb = GetComponent<Rigidbody2D>();
         a = arrow.GetComponent<SpriteRenderer>();
     }
@@ -33,10 +33,10 @@ public class activePlayer : MonoBehaviour
             pm.enabled = true;
             gs.enabled = true;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            foreach(PointAtMouse p in mouses)
+            /*foreach(PointAtMouse p in mouses)
             {
                 p.enabled = true;
-            }
+            }*/
             a.enabled = true;
         }
         else
@@ -44,10 +44,10 @@ public class activePlayer : MonoBehaviour
             pm.enabled = false;
             gs.enabled = false;
             rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-            foreach(PointAtMouse p in mouses)
+            /*foreach(PointAtMouse p in mouses)
             {
                 p.enabled = false;
-            }
+            }*/
             a.enabled = false;
         }
     }
